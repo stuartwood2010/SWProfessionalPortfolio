@@ -1,0 +1,79 @@
+:root {
+    --primary: rgb(4, 51, 7);
+    --secondary: rgb(245, 240, 218); 
+    --tertiary: rgba(14, 59, 18, 0.267);
+    --light: rgb(161, 154, 120);
+    --dark: rgb(0, 0, 0);
+    --headerFont: 'Merriweather', serif;
+    --bodyFont: 'Handlee', cursive;
+    --signiatureFont: 'Dancing Script', cursive;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    color: var(--black);
+    background-color: var(--light);
+    font-family: var(--bodyFont);
+}
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary);
+    flex-direction: row;
+    text-align: center;
+    font-family: var(--headerFont);
+}
+#name {
+    font-family: var(--headerFont);
+    font-size: 56px;
+    font-weight: bold;
+    color: var(--secondary);
+    padding-left: 30px;
+}
+#title {
+    font-size: 32px;
+    color: var(--secondary);
+}
+.navlinks {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    font-size: 20px;
+}
+.links a {
+    color: var(--secondary);
+    margin-right: 20px;
+    text-decoration: none;    
+}
+.links a:hover {
+    color: var(--dark);
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--tertiary);
+    margin-top: 20px;
+    text-align: center;
+}
+h2 {
+    font-family: var(--headerFont);
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 64px;
+    text-decoration: underline;
+}
+p {
+    font-size: 24px;
+}
+.contact-link {
+    font-size: 32px;
+    list-style-type: none;
+}
+.link {
+    color: var(--dark);    
+}
+.link:hover {
+    color: var(--primary);
+}
